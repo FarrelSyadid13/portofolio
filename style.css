@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FFF8F0;
+  color: #1f2937;
+  line-height: 1.6;
+
+}
+
+header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #8C5A3C;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #8C5A3C;
+}
+.hire-button a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #C08552;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.hire-button a:hover {
+  background-color: #8C5A3C;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px #8C5A3C;
+}
+section {
+  padding: 100px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #8C5A3C;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.profile-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #8C5A3C;
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
+}
+
+.hero-text h1 {
+  font-size: 46px;
+  text-align: left;
+  margin-bottom: 10px;
+  color:#8C5A3C;
+}
+
+.hero-text p {
+  font-size: 24px;
+  color: #4b5563;
+}
+
+
+.about-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #4b5563;
+}
+.about-content h1{
+    color:#8C5A3C;
+}
+
+.skills-table {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.skills-table th,
+.skills-table td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.skills-table thead {
+  background-color: #C08552;
+  color: #ffffff;
+}
+
+.skills-table tbody tr:hover {
+  background-color: #f3f4f6;
+}
+
+.contact-intro {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #4b5563;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #C08552;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #C08552;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #8C5A3C;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #4B2E2B;
+  color: #f9fafb;
+  margin-top: 60px;
+}
+@media screen and (max-width: 768px) {
+
+  .navbar {
+    display: flex;
+    flex-direction: row;           
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;            
+    gap: 6px;
+  }
+
+  .logo {
+    font-size: 18px;               
+    flex-shrink: 0;                
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;             
+    align-items: center;
+    gap: 4px;                      
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links a {
+    font-size: 11px;               
+    padding: 4px 5px;              
+    white-space: nowrap;           
+  }
+
+  
+  .nav-links .btn-hire {
+    font-size: 11px;
+    padding: 5px 8px !important;
+    white-space: nowrap;           
+  }
+  .hero-text h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .hero-text p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .about-content {
+    font-size: 14px;
+  }
+
+  .profile-img {
+    width: 180px;
+    height: 180px;
+  }
+
+  section {
+    padding: 50px 16px;
+  }
+.hire-button a {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  .contact-form,
+  .skills-table {
+    width: 100%;
+    padding: 15px;
+  }
+  footer{
+    font-size: 12px;
+  }
+  .skills-table{
+    font-size: 12px;
+  }
+  .contact-intro{
+    font-size: 12px;
+  }
+  .contact-form label{
+    font-size: 12px;
+  }
+}

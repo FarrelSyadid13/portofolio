@@ -3,99 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
+    <title>Portofolio - M Farrel Syadid</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <div>
-            <nav>
-                <ul style="display: flex; list-style: none; gap: 25px; text-align: center; align-items: center; justify-content: center;">
-                   <p>FS</p>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar">
+            <div class="logo">FS</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hire-button">
+                <a href="#contact">Hire Me</a>
+            </div>
+        </nav>
     </header>
-<section id="home">
-    <div style="display: flex; justify-content:center; gap:100px; margin-top: 150px;">
-<div>
-    <img src="https://b.top4top.io/p_3976ujpml1.png" alt="profile-picture" style="height: 350px; width:350px;">
-    </div>
-    <div>
-        <h1 style="font-size: 50px;">M Farrel Syadid</h1>
-        <p style="font-size: 40px;">learn, learn, keep on learning</p>
-    </div>
-</div>
-</section>
 
+    <section id="home">
+        <div class="hero-container">
+            <img src="https://b.top4top.io/p_3976ujpml1.png" alt="profile-picture" class="profile-img">
+            <div class="hero-text">
+                <h1>M Farrel Syadid</h1>
+                <p>Learn, learn, keep on learning</p>
+            </div>
+        </div>
+    </section>
 
-<section id="about">
-    <div style="text-align: center; margin-top: 200px;">
-        <h1>About Me</h1>
-        <p>My name is M Farrel Syadid,a student from the information systems study program.  </br>  I am very active in improving my skills and knowledge about technological developments. I really like working in teams to improve my collaboration skills.</p>
-    </div>
-</section>
+    <section id="about">
+        
+        <div class="about-content">
+          <h1>About Me</h1>
+            <p>My name is M Farrel Syadid, a student from the information systems study program. I am very active in improving my skills and knowledge about technological developments. I really like working in teams to improve my collaboration skills.</p>
+        </div>
+    </section>
 
-<section id="skills">
-    <h1 style="text-align: center; margin-top: 200px;">Skills</h1>
-<table border="1" style=" margin: 0 auto; border-collapse: collapse; width: 100%; max-width: 500px; text-align: left; justify-content: center;" >
-  <!-- Baris Judul Kolom -->
-  <thead>
-    <tr style="background-color: #f2f2f2;">
-      <th style="padding: 8px;">No</th>
-      <th style="padding: 8px;">Nama skill</th>
-      <th style="padding: 8px;">Tingkat Kemahiran</th>
-    </tr>
-  </thead>
+    <section id="skills">
+        
+        <table class="skills-table">
+          <h1>Skills</h1>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Skill</th>
+                    <th>Tingkat Kemahiran</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>HTML</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>CSS</td>
+                    <td>Basic</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-  <!-- Baris Isi Data -->
-  <tbody>
-    <tr>
-      <td style="padding: 8px;">1</td>
-      <td style="padding: 8px;">HTML</td>
-      <td style="padding: 8px;">Intermediate</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px;">2</td>
-      <td style="padding: 8px;">CSS</td>
-      <td style="padding: 8px;">Basic</td>
-    </tr>
-  </tbody>
-</table>
-</section>
-
-<section id="contact">
-    <div style="text-align: center; margin-top: 200px;">
+    <section id="contact">
         <h1>Contact Me</h1>
-        <p>If you want to contact me, please fill out the form below.</p>
-    </div>
-    <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 12px; max-width: 400px; justify-content: center; margin: 0 auto;">
-  <div>
-    <label for="nama">Nama</label><br>
-    <input type="text" id="nama" name="nama" required style="width: 100%; padding: 8px;">
-  </div>
+        <p class="contact-intro">If you want to contact me, please fill out the form below.</p>
+        
+        <form action="#" method="POST" class="contact-form">
+            <div>
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" rows="4" required></textarea>
+            </div>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
 
-  <div>
-    <label for="email">Email</label><br>
-    <input type="email" id="email" name="email" required style="width: 100%; padding: 8px;">
-  </div>
-
-  <div>
-    <label for="pesan">Pesan</label><br>
-    <textarea id="pesan" name="pesan" rows="4" required style="width: 100%; padding: 8px;"></textarea>
-  </div>
-
-  <button type="submit" style="padding: 10px;">Kirim</button>
-</form>
-
-</section>
-
-<footer style="text-align: center; margin-top: 200px;">
-    <p>&copy; 2024 M Farrel Syadid. All rights reserved.</p>
-</footer>
+    <footer>
+        <p>&copy; 2026 M Farrel Syadid. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
