@@ -213,6 +213,23 @@ footer {
   color: #f9fafb;
   margin-top: 60px;
 }
+.social-icons {
+  display: flex;
+  justify-content: left;
+  gap: 15px;
+  margin-top: 20px;
+  padding-top: 30px;
+}
+.social-icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.social-icon:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
 @media screen and (max-width: 768px) {
 
   .navbar {
@@ -292,5 +309,13 @@ footer {
   }
   .contact-form label{
     font-size: 12px;
+  }
+  .social-icons {
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .social-icon {
+    width: 25px;
+    height: 25px;
   }
 }
