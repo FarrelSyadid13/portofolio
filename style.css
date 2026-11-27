@@ -230,6 +230,47 @@ footer {
   filter: brightness(1.2);
 }
 
+.theme-btn {
+  position: fixed;
+  top: 85px;
+  right: 25px;
+  z-index: 99; 
+  
+  background-color: #ffffff;
+  border: 2px solid #C08552;
+  color: #8C5A3C;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+  background-color: #C08552;
+  color: #ffffff;
+  transform: scale(1.1) rotate(15deg);
+}
+
+.theme-btn .material-symbols-rounded {
+  font-size: 22px;
+}
+body.dark-mode .theme-btn {
+  background-color: #1f1b18;
+  border-color: #D49B6A;
+  color: #D49B6A;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .theme-btn:hover {
+  background-color: #D49B6A;
+  color: #161311;
+}
+
 @media screen and (max-width: 768px) {
 
   .navbar {
@@ -317,5 +358,15 @@ footer {
   .social-icon {
     width: 25px;
     height: 25px;
+  }
+  .theme-btn {
+    top: 60px;
+    right: 15px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .theme-btn .material-symbols-rounded {
+    font-size: 18px;
   }
 }
