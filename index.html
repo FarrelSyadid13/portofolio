@@ -85,7 +85,7 @@
         <h1>Contact Me</h1>
         <p class="contact-intro">If you want to contact me, please fill out the form below.</p>
         
-        <form action="#" method="POST" class="contact-form">
+        <form action="#" method="POST" class="contact-form" id="form-kontak">
             <div>
                 <label for="nama">Nama</label>
                 <input type="text" id="nama" name="nama" required>
@@ -101,7 +101,13 @@
             <button type="submit">Kirim</button>
         </form>
     </section>
-
+<div id="popup-modal" class="modal-overlay">
+        <div class="modal-box">
+            <h2>Pesan Terkirim!</h2>
+            <p id="popup-pesan"></p>
+            <button type="button" id="btn-selesai">Selesai</button>
+        </div>
+    </div>
     <footer>
         <p>&copy; 2026 M Farrel Syadid. All rights reserved.</p>
     </footer>
